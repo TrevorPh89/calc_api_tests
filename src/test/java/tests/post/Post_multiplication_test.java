@@ -53,5 +53,4 @@ public class Post_multiplication_test extends BaseTest {
 
         response.then().statusCode(400).log().all();
     }
-
 }

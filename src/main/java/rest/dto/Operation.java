@@ -13,5 +13,4 @@ public enum Operation {
     MUL("mul"),
     DIV("div");
     private String value;
-
 }

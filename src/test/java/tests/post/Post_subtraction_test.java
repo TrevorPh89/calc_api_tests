@@ -17,8 +17,6 @@ import static org.hamcrest.Matchers.hasKey;
 
 @Slf4j
 public class Post_subtraction_test extends BaseTest {
-
-
     @Test(dataProvider = "integer-data-provider", dataProviderClass = SubtractionDataProvider.class)
     public void subtractionTestPositiveOperands(long val1, long val2) {
         long expectedResult = val1 - val2;
@@ -53,6 +51,4 @@ public class Post_subtraction_test extends BaseTest {
 
         response.then().statusCode(400).log().all();
     }
-
-
 }

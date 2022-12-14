@@ -15,7 +15,4 @@ public class PostComputeRequest {
     Object val1;
     Object val2;
     Operation operation;
-
-
-
 }

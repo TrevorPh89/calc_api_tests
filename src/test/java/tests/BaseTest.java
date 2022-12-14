@@ -18,7 +18,5 @@ public class BaseTest {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-
     }
-
 }

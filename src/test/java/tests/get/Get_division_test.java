@@ -15,7 +15,6 @@ import static org.hamcrest.Matchers.hasKey;
 
 @Slf4j
 public class Get_division_test extends BaseTest {
-
     @Test(dataProvider = "integer-data-provider", dataProviderClass = DivisionDataProvider.class)
     public void divisionIntNumbersTest(long val1, long val2) {
         Response response = RestAssured.given()
@@ -57,5 +56,4 @@ public class Get_division_test extends BaseTest {
 
         response.then().statusCode(400).log().all();
     }
-
 }

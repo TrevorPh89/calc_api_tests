@@ -6,7 +6,6 @@ public class SubtractionDataProvider {
     private static final long MAX_INT_VALUE = ((Number) Integer.MAX_VALUE).longValue();
     private static final long MIN_INT_VALUE = ((Number) Integer.MIN_VALUE).longValue();
 
-
     @DataProvider(name = "integer-data-provider")
     public static Object[][] integerDataProvider() {
         return new Object[][]{{MAX_INT_VALUE, ((Number) 1).longValue()},
@@ -36,6 +35,4 @@ public class SubtractionDataProvider {
                 {MIN_INT_VALUE - 1, 100},
         };
     }
-
-
 }

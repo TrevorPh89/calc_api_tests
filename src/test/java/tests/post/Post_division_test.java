@@ -17,8 +17,6 @@ import static org.hamcrest.Matchers.hasKey;
 
 @Slf4j
 public class Post_division_test extends BaseTest {
-
-
     @Test(dataProvider = "integer-data-provider", dataProviderClass = DivisionDataProvider.class)
     public void divisionTestPositiveOperands(long val1, long val2) {
         PostComputeRequest request = new PostComputeRequest().withVal1(val1).withVal2(val2).withOperation(Operation.DIV);
@@ -57,6 +55,4 @@ public class Post_division_test extends BaseTest {
 
         response.then().statusCode(400).log().all();
     }
-
-
 }
